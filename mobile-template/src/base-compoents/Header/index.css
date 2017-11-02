@@ -1,0 +1,33 @@
+:local .header{
+    height: 45px;
+    line-height: 45px;
+    background-color: #ffffff;
+    width: 100%; 
+    top: 0px;
+    left: 0px; 
+    display: -webkit-flex; 
+} 
+:local  .leftContent{  
+    flex: 1;
+    -webkit-box-flex: 1;
+    display: -webkit-flex;
+    padding-left: 15px;
+    align-self: center;
+}
+:local  .title{
+    font-size: 20px; 
+    flex: 3;
+    -webkit-box-flex: 3;
+    overflow: hidden;
+    text-align: center;
+}
+:local  .rightContent{  
+    flex: 1;
+    -webkit-box-flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+:local .leftContent img{ 
+    width: 13px;
+    height: 22px; 
+}

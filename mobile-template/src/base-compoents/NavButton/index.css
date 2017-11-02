@@ -1,0 +1,23 @@
+:local .button{
+    display: block;
+    outline: 0 none;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    height: 47px;
+    line-height: 47px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap; 
+    background-color: #fff; 
+    border-radius: 2px; 
+    text-decoration:none;
+}
+:local .active{
+    background-color: #ddd;
+}

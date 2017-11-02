@@ -2,6 +2,7 @@
   "name": "mobile-template",
   "version": "0.1.0",
   "private": true,
+  "proxy":"http://127.0.0.1:8080",
   "dependencies": {
     "antd-mobile": "^2.0.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",

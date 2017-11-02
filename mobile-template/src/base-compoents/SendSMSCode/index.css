@@ -1,0 +1,28 @@
+:local .inputItem{ 
+    height: 54px;
+    padding-left: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    display: -webkit-flex; 
+    align-items: center;
+}
+:local .inputItem span{  
+    left: 10px;
+    padding: 15px 0px 15px 0px;
+    line-height: 24px;
+    color: #2d2d2d; 
+    inline-size: 44px; 
+    width: 80px;
+}
+:local .inputItem input{  
+    padding: 8px; 
+    border: 0px; 
+    line-height: 24px;    
+    flex: 1;
+    height: 24px;
+    width: 80px;
+} 
+:local .btnMsCode{ 
+    width: 130px;
+    margin-right: 10px;
+}
