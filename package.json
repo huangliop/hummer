@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "React\\ReactRouter\\Mobx",
   "main": "index.js",
+  "bin": {
+    "hummer": "./app.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
