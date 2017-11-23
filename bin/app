@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+const exec = require('child_process').execSync;
+
+const install=(platform,dir)=>{
+    const url=platform==='mobile'?'https://github.com/huangliop/hummer-mobile.git':'https://github.com/huangliop/hummer-pcweb.git ';
+    exec(`git clone ${url} ${dir}`);
+    if(process.platform==='win32'){
+        exec(`rmdir ${dir}\\.git /s /q`); 
+    }else{
+        exec(`rm -rf ${dir}/.git`); 
+    }
+    console.log('安装完成，请执行一下命令');
+    console.log(`cd ${dir}`);
+    console.log('yarn 或者 npm install')
+    console.log('-----------------------');
+    console.log('yarn start:启动网页');
+    console.log('yarn build:构建工程');
+}
+
+if(process.argv.length!=4){
+    console.log("请输入正确的命令");
+    console.log("hummer mobile [dir]:创建适用于移动设备的web工程，dir为输出的目录");
+    console.log("hummer pc [dir]:创建适用于PC的web工程，dir为输出的目录");
+    return;
+}
+switch (process.argv[2]) {
+    case '-h':
+        console.log("hummer mobile [dir]:创建适用于移动设备的web工程，dir为输出的目录");
+        console.log("hummer pc [dir]:创建适用于PC的web工程，dir为输出的目录");
+        break;
+    case 'mobile':  
+    case 'pc': 
+        install(process.argv[2],process.argv[3]);
+        break;
+    default:
+        console.log("请输入正确的命令");
+        console.log("hummer mobile [dir]:创建适用于移动设备的web工程，dir为输出的目录");
+        console.log("hummer pc [dir]:创建适用于PC的web工程，dir为输出的目录");
+        break;
+}

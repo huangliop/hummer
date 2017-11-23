@@ -1,10 +1,9 @@
 {
-  "name": "hummer",
+  "name": "hummers",
   "version": "1.0.0",
-  "description": "React\\ReactRouter\\Mobx",
-  "main": "index.js",
+  "description": "React\\ReactRouter\\Mobx", 
   "bin": {
-    "hummer": "./bin/app.js"
+    "hummer": "./bin/app"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/huangliop/hummer.git"
   },
+  "preferGlobal": true,
   "author": "Huang Li",
   "license": "ISC",
   "bugs": {
