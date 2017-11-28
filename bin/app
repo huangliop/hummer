@@ -2,6 +2,7 @@
 const exec = require('child_process').execSync;
 
 const install=(platform,dir)=>{
+    console.log('下载中请等待...');
     const url=platform==='mobile'?'https://github.com/huangliop/hummer-mobile.git':'https://github.com/huangliop/hummer-pcweb.git ';
     exec(`git clone ${url} ${dir}`);
     if(process.platform==='win32'){
