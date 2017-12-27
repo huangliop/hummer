@@ -2,9 +2,10 @@
 开箱即用的React脚手架。
 集成create-react-app 、antd、mobx。
 
-组件使用请将下面的文档
+**组件使用请将下面的文档**
 [移动端文档](https://mobile.ant.design/index-cn)
 [PC端文档](https://ant.design/docs/react/introduce-cn)
+
 ## 安装
 npm install -g hummers
 
@@ -51,3 +52,7 @@ yarn start
 ### 8.发布更新
 将生成好的build目录覆盖服务器的相同文件后，运行
 `pm2 reload my-app`
+
+## 更多详细使用方法
+[详细使用方法:移动端](https://github.com/huangliop/hummer-mobile)
+[详细使用方法:PC端](https://github.com/huangliop/hummer-pcweb)
