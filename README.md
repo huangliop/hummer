@@ -6,7 +6,8 @@
 [移动端文档](https://mobile.ant.design/index-cn)
 
 [PC端文档](https://ant.design/docs/react/introduce-cn)
-
+## 推荐编辑器
+[Visual Studio Code](https://code.visualstudio.com/)
 ## 安装
 npm install -g hummers
 
