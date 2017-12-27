@@ -29,7 +29,7 @@ yarn install 或者 npm install
 ### 6.运行
 yarn start
 ### 7.发布
-[服务准备]()
+[服务器准备]()
 
 修改server.js中接口代理地址
 
