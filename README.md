@@ -2,10 +2,12 @@
 开箱即用的React脚手架。
 集成create-react-app 、antd、mobx。
 
-**组件使用请将下面的文档**
-[移动端文档](https://mobile.ant.design/index-cn)
+**其他文档**
+[Antd移动端文档](https://mobile.ant.design/index-cn)
 
-[PC端文档](https://ant.design/docs/react/introduce-cn)
+[Antd PC端文档](https://ant.design/docs/react/introduce-cn)
+
+[React官方中文文档](https://doc.react-china.org/docs/installation.html)
 ## 推荐编辑器
 [Visual Studio Code](https://code.visualstudio.com/)
 ## 安装
