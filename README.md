@@ -3,11 +3,13 @@
 集成create-react-app 、antd、mobx。
 
 **其他文档**
+
 [Antd移动端文档](https://mobile.ant.design/index-cn)
 
 [Antd PC端文档](https://ant.design/docs/react/introduce-cn)
 
 [React官方中文文档](https://doc.react-china.org/docs/installation.html)
+**请先确定git命令能正常运行**
 ## 推荐编辑器
 [Visual Studio Code](https://code.visualstudio.com/)
 ## 安装
@@ -16,11 +18,15 @@ npm install -g hummers
 ## 使用步骤
 
 ### 1.创建项目
-hummer mobile [dir]:创建适用于移动设备的web工程，dir为输出的目录
+创建适用于移动设备的web工程
+
+`hummer mobile myapp`
 
 [具体教程](https://github.com/huangliop/hummer-mobile/blob/master/README.md)
 
-hummer pc [dir]:创建适用于PC的web工程，dir为输出的目录
+创建适用于PC的web工程
+
+`hummer pc myapp`
 
 [具体教程](https://github.com/huangliop/hummer-pcweb/blob/master/README.md)
 ### 2.添加依赖
@@ -30,7 +36,7 @@ yarn install 或者 npm install
 [修改标题](https://github.com/huangliop/hummer-mobile/blob/master/README.md#%E4%BF%AE%E6%94%B9%E6%A0%87%E9%A2%98)
 ### 4.修改package.json
 [修改开发使用接口的代理](https://github.com/huangliop/hummer-mobile/blob/master/README.md#%E8%B0%83%E7%94%A8%E6%8E%A5%E5%8F%A3)
-[修改发布目录]()`如果还未确定，也去等到发布时再修改`
+[修改发布目录]()`如果还未确定，也可等到发布时再修改`
 ### 5.开发
 在src/pages下新建页面,如`MyPage.js` `MyPage.css`。`页面使用驼峰命名法`
 
