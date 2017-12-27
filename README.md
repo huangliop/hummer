@@ -9,7 +9,10 @@
 [Antd PC端文档](https://ant.design/docs/react/introduce-cn)
 
 [React官方中文文档](https://doc.react-china.org/docs/installation.html)
-**请先确定git命令能正常运行**
+## 需要的软件
+
+[node](https://nodejs.org)
+[git](https://git-scm.com/downloads)
 ## 推荐编辑器
 [Visual Studio Code](https://code.visualstudio.com/)
 ## 安装
