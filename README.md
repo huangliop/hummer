@@ -23,9 +23,10 @@ yarn install 或者 npm install
 [修改开发使用接口的代理](https://github.com/huangliop/hummer-mobile/blob/master/README.md#%E8%B0%83%E7%94%A8%E6%8E%A5%E5%8F%A3)
 [修改发布目录]()`如果还未确定，也去等到发布时再修改`
 ### 5.开发
-在src/pages下新建页面,如`home.js` `home.css`。
+在src/pages下新建页面,如`MyPage.js` `MyPage.css`。`页面使用驼峰命名法`
 
 [在src/App.js中引入页面](https://github.com/huangliop/hummer-mobile/blob/master/README.md#%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E7%BB%84%E4%BB%B6)
+
 ### 6.运行
 yarn start
 ### 7.发布
