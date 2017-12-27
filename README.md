@@ -1,6 +1,10 @@
 # Hummers/蜂鸟
 开箱即用的React脚手架。
 集成create-react-app 、antd、mobx。
+
+组件使用请将下面的文档
+[移动端文档](https://mobile.ant.design/index-cn)
+[PC端文档](https://ant.design/docs/react/introduce-cn)
 ## 安装
 npm install -g hummers
 
@@ -27,6 +31,9 @@ yarn install 或者 npm install
 
 [在src/App.js中引入页面](https://github.com/huangliop/hummer-mobile/blob/master/README.md#%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E7%BB%84%E4%BB%B6)
 
+添加接口地址,请在transport-layer/ApiUrl.js中添加
+
+调用接口，请模仿stores/UserStore.js中的写法
 ### 6.运行
 yarn start
 ### 7.发布
