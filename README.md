@@ -12,6 +12,7 @@
 ## 需要的软件
 
 [node](https://nodejs.org)
+
 [git](https://git-scm.com/downloads)
 ## 推荐编辑器
 [Visual Studio Code](https://code.visualstudio.com/)
@@ -31,10 +32,10 @@ npm install -g hummers
 
 `hummer pc myapp`
 
-[具体教程](https://github.com/huangliop/hummer-pcweb/blob/master/README.md)
+[具体教程](https://github.com/huangliop/hummer-mobile/blob/master/README.md)
 ### 2.添加依赖
 进入上面创建的文件夹
-yarn install 或者 npm install
+`npm install 或者 yarn install` 
 ### 3.修改网页标题
 [修改标题](https://github.com/huangliop/hummer-mobile/blob/master/README.md#%E4%BF%AE%E6%94%B9%E6%A0%87%E9%A2%98)
 ### 4.修改package.json
