@@ -72,7 +72,7 @@ yarn start
 
 > 链接npm命令:`ln -s /my/node-v0.10.26-linux-x64/bin/npm /usr/local/bin/npm`  /my/node-v0.10.26-linux-x64/bin/npm 为自己安装的node下的npm的位置.
 
-如果完成以上步骤后还是为成功，请自行百度解决。
+如果完成以上步骤后还是未成功，请自行百度解决。
 #### 安装pm2
 ***建议使用pm2进行node进程管理***
 
