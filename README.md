@@ -95,9 +95,7 @@ yarn start
 
 > 将工程生成的build目录和server.js上传到服务器的 mywebapp下
 
->`cat /proc/cpuinfo| grep "cpu cores"| uniq` 查看cpu逻辑核数 
-
->`pm2 start server.js --name="myapp" -i max` 创建应用，其中max 为上面一条命令得到的逻辑核数 
+>`pm2 start server.js --name="myapp" -i max` 创建应用
 
 设置开机启动请看[这里](http://pm2.keymetrics.io/docs/usage/startup/#init-systems-supported)
 
