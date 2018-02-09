@@ -52,22 +52,58 @@ npm install -g hummers
 ### 6.运行
 yarn start
 ### 7.发布
-[服务器准备]()
 
-修改server.js中接口代理地址
+`yarn build` 或者`npm run build` 生成build目录
 
-运行 yarn build
+#### 准备服务器
+`由于前端都是一些静态资源文件，所以推荐使用node的express框架作为服务器`
 
-将生成的build目录和server.js拷贝到发布的服务器某目录下。
+***以下操作都是在Linux系统上***
 
-在服务器中运行命令
+##### 安装node
+***先使用 node -v 命令检查是否已经装有node***
+>[下载Lnux版node](https://nodejs.org/en/download/)
 
-`pm2 start server.js --name="my-app" -i [cpu核数] `
+>将下载的压缩包上传至需要部署的服务器 
+
+>解压：先执行`xz -d node.tar.xz ` 再执行 `tar xvf node.tar`
+
+>链接node命令: `ln -s /my/node-v0.10.26-linux-x64/bin/npm/node /usr/local/bin/node`  /my/bin/node 为自己安装的node的路径
+
+> 链接npm命令:`ln -s /my/node-v0.10.26-linux-x64/bin/npm /usr/local/bin/npm`  /my/node-v0.10.26-linux-x64/bin/npm 为自己安装的node下的npm的位置.
+
+如果完成以上步骤后还是为成功，请自行百度解决。
+#### 安装pm2
+***建议使用pm2进行node进程管理***
+
+> npm install pm2 -g
+
+如果没有网络，请安下面方法安装
+
+>`npm config get prefix` 获得node的安装目录
+
+>在已经安装了pm2的服务器上拷贝一份到没有网络的服务器的node目录下的lib/node_modules下面
+
+>运行构建命令:`npm build pm2 -g`
+
+#### 发布步骤
+> `mkdir mywebapp` 创建一个文件夹用于存放静态资源
+
+> `cd mywebapp` 进入创建的目录
+
+> `npm install express` 安装express，如果没有网络，可以从其他地方直接拷贝node_modules过来
+
+> 将工程生成的build目录和server.js上传到服务器的 mywebapp下
+
+>`cat /proc/cpuinfo| grep "cpu cores"| uniq` 查看cpu逻辑核数 
+
+>`pm2 start server.js --name="myapp" -i max` 创建应用，其中max 为上面一条命令得到的逻辑核数 
+
+设置开机启动请看[这里](http://pm2.keymetrics.io/docs/usage/startup/#init-systems-supported)
+
 ### 8.发布更新
 将生成好的build目录覆盖服务器的相同文件后，运行
-`pm2 reload my-app`
+`pm2 reload myapp`
 
 ## 更多详细使用方法
-[详细使用方法:移动端](https://github.com/huangliop/hummer-mobile)
-
-[详细使用方法:PC端](https://github.com/huangliop/hummer-pcweb)
+[详细使用方法](https://github.com/huangliop/hummer-mobile)
