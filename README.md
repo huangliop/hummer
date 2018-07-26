@@ -1,5 +1,5 @@
 # Hummers/蜂鸟
-开箱即用的React脚手架。
+开箱即用的React脚手架，以及创建可发布到Npm上的react组件的模板工程
 集成create-react-app 、antd、mobx。
 
 **其他文档**
@@ -17,7 +17,16 @@
 ## 推荐编辑器
 [Visual Studio Code](https://code.visualstudio.com/)
 ## 安装
-npm install -g hummers
+
+> npm install -g hummers
+
+## 创建插件
+
+>`hummer component my-com`
+
+>`cd my-com`
+
+>查看`README.md`
 
 ## 使用步骤
 
