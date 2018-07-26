@@ -9,13 +9,23 @@ function showHelp(isErrorCmd){
 }
 function install(platform,dir){
     console.log('下载中请等待...');
-    const url=platform==='mobile'?'https://github.com/huangliop/hummer-mobile.git':'https://github.com/huangliop/hummer-pcweb.git ';
+    const url='https://github.com/huangliop/hummer-mobile.git';
     exec(`git clone ${url} ${dir}`);
     if(process.platform==='win32'){
         exec(`rmdir ${dir}\\.git /s /q`); 
+        if(platform==='pc'){
+            exec(`rmdir ${dir}\\src\\base-components /s /q`);
+        }
     }else{
         exec(`rm -rf ${dir}/.git`); 
+        if(platform==='pc'){
+            exec(`rm -rf ${dir}/src/base-components`)
+        }
     }
+    if(platform==='pc'){
+        modifyFile(`${dir}/config-overrides.js`,'antd-mobile','antd');
+    }
+    modifyFile(`${dir}/package.json`,'mobile-template',dir)
     console.log('安装完成，请执行一下命令');
     console.log(`cd ${dir}`);
     console.log('yarn 或者 npm install')
