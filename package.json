@@ -1,6 +1,6 @@
 {
   "name": "hummers",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "React\\ReactRouter\\Mobx",
   "bin": {
     "hummer": "./bin/app"

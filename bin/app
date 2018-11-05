@@ -23,7 +23,7 @@ function install(platform,dir){
         }
     }
     if(platform==='pc'){
-        modifyFile(`${dir}/config-overrides.js`,'antd-mobile','antd');
+        modifyFile(`${dir}/config-overrides.js`,/antd-mobile/g,'antd');
     }
     modifyFile(`${dir}/package.json`,'mobile-template',dir)
     console.log('安装完成，请执行一下命令');
