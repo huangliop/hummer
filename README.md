@@ -1,6 +1,6 @@
 # Hummers/蜂鸟
 开箱即用的React脚手架，以及创建可发布到Npm上的react组件的模板工程
-集成create-react-app 、antd、mobx。
+集成create-react-app 、mobx。
 
 **其他文档**
 
