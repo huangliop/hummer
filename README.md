@@ -22,7 +22,7 @@
 
 ## 以CRA模板方式安装(推荐)
 
-`npx creat-react-app my-app --template cra-template-hummer`
+`npx create-react-app my-app --template cra-template-hummer`
 
 ## 使用步骤
 
